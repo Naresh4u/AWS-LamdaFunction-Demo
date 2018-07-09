@@ -20,10 +20,5 @@ Resources:
               Ref: Bucket1
             Events:
               - 's3:ObjectCreated:*'
-            Filter:
-              S3Key:
-                Rules:
-                  - Name: suffix
-                    Value: txt
   Bucket1:
     Type: 'AWS::S3::Bucket'
